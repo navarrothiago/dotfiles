@@ -1,0 +1,18 @@
+[user]
+    name = Thiago Arruda Navarro do Amaral
+    email = t_61327@cpqd.com.br
+[alias]
+    sync = pull --rebase
+    co = checkout
+[core]
+    excludesfile = /home/cpqd/.gitignore_global
+    editor = vim
+[merge]
+    tool = kdiff3
+[color]
+    ui = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

@@ -5,7 +5,7 @@
     sync = pull --rebase
     co = checkout
 [core]
-    excludesfile = /home/cpqd/.gitignore_global
+    excludesfile = ~/.gitignore_global
     editor = vim
 [merge]
     tool = kdiff3

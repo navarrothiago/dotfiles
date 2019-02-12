@@ -327,3 +327,5 @@ Prismtech/SCAGpsResource_generatedSRC_CPP/obj/eorb20-linux-gcc-x86-tools/eorb20-
 gmon.out
 src/gen/
 scripts/PackagePlataforma*
+
+org.eclipse.cdt.core.prefs

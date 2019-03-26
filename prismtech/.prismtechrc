@@ -1,0 +1,31 @@
+export MSCA_HOME=/work/msca
+export MFOSCA_WORKSPACE=/work/mfosca
+# DTP
+export DTPHOME=/opt/dtp
+export EORBHOME=$DTPHOME/eorb
+export CFHOME=$DTPHOME/host/cf
+
+export EORBENV=linux-gcc-x86
+export PATH=$PATH:$EORBHOME/bin/$EORBENV
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$EORBHOME/lib/$EORBENV
+
+export PATH=$PATH:$CFHOME/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CFHOME/lib
+
+
+# TILinux
+export DVSDK=/usr/local/dvsdk
+
+#dvsdk para dtp v2.3.1
+#export DSPLINK=$DVSDK/dsplink_1_65_00_02/dsplink
+#dvsdk para dtp v3.0.0
+export DSPLINK=$DVSDK/dsplink_1_65_01_05_eng/dsplink
+
+export BIOS_INSTALL_DIR=$DVSDK/dspbios_5_41_03_17
+export C6X_INSTALL_DIR=$DVSDK/cgt6x_6_1_14
+export XDCTOOLS_DIR=$DVSDK/xdctools_3_16_03_36
+export PATH=$C6X_INSTALL_DIR/bin:$PATH
+
+# Necessário para dvsdk do dtp v2.3.1
+#export PATH=/opt/CodeSourcery/Sourcery_G++_Lite/bin:$PATH
+

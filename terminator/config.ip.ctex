@@ -1,0 +1,321 @@
+[global_config]
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  suppress_multiple_term_dialog = True
+  title_font = Monospace 9
+  title_use_system_font = False
+  window_state = maximise
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child0]]]
+      order = 0
+      parent = ""
+      position = 65:24
+      size = 1855, 1056
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 191
+      type = VPaned
+    [[[child10]]]
+      order = 0
+      parent = child9
+      position = 188
+      type = VPaned
+    [[[child12]]]
+      order = 1
+      parent = child10
+      position = 266
+      type = VPaned
+    [[[child15]]]
+      order = 1
+      parent = child9
+      position = 189
+      type = VPaned
+    [[[child17]]]
+      order = 1
+      parent = child15
+      position = 268
+      type = VPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 927
+      type = HPaned
+    [[[child5]]]
+      order = 1
+      parent = child1
+      position = 121
+      type = VPaned
+    [[[child6]]]
+      order = 0
+      parent = child5
+      position = 927
+      type = HPaned
+    [[[child9]]]
+      order = 1
+      parent = child5
+      position = 927
+      type = HPaned
+    [[[terminal11]]]
+      command = ssh rds@rds-guarani
+      group = Kill BLACK
+      order = 0
+      parent = child10
+      profile = default
+      type = Terminal
+    [[[terminal13]]]
+      command = ssh rds@rds-guarani tail -f /var/log/platform2.log
+      group = LOG RED
+      order = 0
+      parent = child12
+      profile = default
+      type = Terminal
+    [[[terminal14]]]
+      command = ssh rds@rds-guarani ssh mpblack tail -f /var/log/platform2.log
+      group = LOG BLACK
+      order = 1
+      parent = child12
+      profile = default
+      type = Terminal
+    [[[terminal16]]]
+      command = ssh rds@rds-marrua
+      group = Kill BLACK
+      order = 0
+      parent = child15
+      profile = default
+      type = Terminal
+    [[[terminal18]]]
+      command = ssh rds@rds-marrua tail -f /var/log/platform2.log
+      group = LOG RED
+      order = 0
+      parent = child17
+      profile = default
+      type = Terminal
+    [[[terminal19]]]
+      command = ssh -X rds@rds-marrua ssh mpblack tail -f /var/log/platform2.log
+      group = LOG BLACK
+      order = 1
+      parent = child17
+      profile = default
+      type = Terminal
+    [[[terminal3]]]
+      command = ssh rds@rds-guarani
+      group = Monitor
+      order = 0
+      parent = child2
+      profile = default
+      type = Terminal
+    [[[terminal4]]]
+      command = ssh rds@rds-marrua
+      group = Monitor
+      order = 1
+      parent = child2
+      profile = default
+      type = Terminal
+    [[[terminal7]]]
+      command = ssh rds@rds-guarani
+      group = Kill RED
+      order = 0
+      parent = child6
+      profile = default
+      type = Terminal
+    [[[terminal8]]]
+      command = ssh rds@rds-marrua
+      group = Kill RED
+      order = 1
+      parent = child6
+      profile = default
+      type = Terminal
+  [[navarro]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 0:25
+      size = 1366, 719
+      title = rds@mpred: /opt/PackageMonitorRelease
+      type = Window
+    [[[child1]]]
+      active_page = 0
+      labels = None, None
+      last_active_term = e376852d-de9b-4a08-9f28-f83e1779238c, 6d531910-3206-489d-9fcd-fa66a01abdae
+      order = 0
+      parent = child0
+      type = Notebook
+    [[[child10]]]
+      order = 1
+      parent = child6
+      position = 680
+      ratio = 0.500367917586
+      type = HPaned
+    [[[child11]]]
+      order = 0
+      parent = child10
+      position = 156
+      ratio = 0.385185185185
+      type = VPaned
+    [[[child13]]]
+      order = 1
+      parent = child11
+      position = 139
+      ratio = 0.560483870968
+      type = VPaned
+    [[[child16]]]
+      order = 1
+      parent = child10
+      position = 156
+      ratio = 0.385185185185
+      type = VPaned
+    [[[child18]]]
+      order = 1
+      parent = child16
+      position = 129
+      ratio = 0.520161290323
+      type = VPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 172
+      ratio = 0.251461988304
+      type = VPaned
+    [[[child21]]]
+      order = 1
+      parent = child1
+      position = 680
+      ratio = 0.500367917586
+      type = HPaned
+    [[[child22]]]
+      order = 0
+      parent = child21
+      position = 342
+      ratio = 0.5
+      type = VPaned
+    [[[child25]]]
+      order = 1
+      parent = child21
+      position = 342
+      ratio = 0.5
+      type = VPaned
+    [[[child3]]]
+      order = 0
+      parent = child2
+      position = 680
+      ratio = 0.500367917586
+      type = HPaned
+    [[[child6]]]
+      order = 1
+      parent = child2
+      position = 105
+      ratio = 0.205479452055
+      type = VPaned
+    [[[child7]]]
+      order = 0
+      parent = child6
+      position = 680
+      ratio = 0.500367917586
+      type = HPaned
+    [[[terminal12]]]
+      group = Kill BLACK
+      order = 0
+      parent = child11
+      profile = default
+      type = Terminal
+      uuid = c795037a-ef17-491f-acbb-09e2c24e86ad
+    [[[terminal14]]]
+      group = LOG RED
+      order = 0
+      parent = child13
+      profile = default
+      type = Terminal
+      uuid = 35ae7849-1ce0-4e1c-ad7e-55d84e29d6be
+    [[[terminal15]]]
+      group = LOG BLACK
+      order = 1
+      parent = child13
+      profile = default
+      type = Terminal
+      uuid = 2cd3d9f6-0649-4f79-bf5f-40864e2e96aa
+    [[[terminal17]]]
+      group = Kill BLACK
+      order = 0
+      parent = child16
+      profile = default
+      type = Terminal
+      uuid = c10684b0-5730-4ae6-8221-f2a6ed33ae83
+    [[[terminal19]]]
+      group = LOG RED
+      order = 0
+      parent = child18
+      profile = default
+      type = Terminal
+      uuid = 5be06573-ce1b-4cc9-9210-523cb726e535
+    [[[terminal20]]]
+      group = LOG BLACK
+      order = 1
+      parent = child18
+      profile = default
+      type = Terminal
+      uuid = 73b7997b-4a2a-4b35-ab31-d18cece8534e
+    [[[terminal23]]]
+      order = 0
+      parent = child22
+      profile = default
+      type = Terminal
+      uuid = 1bc0e445-62bf-4383-bc9e-edd48c1ab9e1
+    [[[terminal24]]]
+      order = 1
+      parent = child22
+      profile = default
+      type = Terminal
+      uuid = ce05aff6-6ee7-4742-944b-069087ef3d7a
+    [[[terminal26]]]
+      order = 0
+      parent = child25
+      profile = default
+      type = Terminal
+      uuid = 2cccfa17-a1ed-4777-a545-ea47cde56056
+    [[[terminal27]]]
+      order = 1
+      parent = child25
+      profile = default
+      type = Terminal
+      uuid = 6d531910-3206-489d-9fcd-fa66a01abdae
+    [[[terminal4]]]
+      group = Monitor
+      order = 0
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = e376852d-de9b-4a08-9f28-f83e1779238c
+    [[[terminal5]]]
+      group = Monitor
+      order = 1
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = 6e41418f-b3ca-4527-863b-2deed918317f
+    [[[terminal8]]]
+      group = Kill RED
+      order = 0
+      parent = child7
+      profile = default
+      type = Terminal
+      uuid = a95904de-a522-4123-8a7c-1f72402cf797
+    [[[terminal9]]]
+      group = Kill RED
+      order = 1
+      parent = child7
+      profile = default
+      type = Terminal
+      uuid = 847b3ebb-09d0-4928-b3fe-cdbc403d95a6
+[plugins]
+[profiles]
+  [[default]]
+    copy_on_selection = True
+    cursor_color = "#aaaaaa"
+    font = Monospace 9
+    use_system_font = False

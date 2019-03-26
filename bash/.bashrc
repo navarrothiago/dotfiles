@@ -139,6 +139,7 @@ PATH=$PATH:/work/TextAnalysisTool.NET/:/work/logs/
 alias stanag=' cd /work/stanag-5066/stanag5066-stack/stack'
 
 export MFOSCAHF_WORKSPACE=/work/mfosca-hf
+export RDS_LOG_FILE_TERMINATOR=platform2.log
 
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'

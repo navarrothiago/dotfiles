@@ -2,132 +2,128 @@
   enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   window_state = maximise
 [keybindings]
-  broadcast_all = <Alt>a
-  broadcast_group = <Alt>g
-  broadcast_off = <Alt>o
-[profiles]
-  [[default]]
-    scroll_on_output = False
-    scrollback_infinite = True
-    foreground_color = "#ffffff"
 [layouts]
   [[default]]
     [[[child0]]]
-      position = 65:24
-      type = Window
       order = 0
       parent = ""
+      position = 65:24
       size = 1855, 1056
+      type = Window
     [[[child1]]]
-      position = 191
-      type = VPaned
       order = 0
       parent = child0
-    [[[child2]]]
-      position = 927
-      type = HPaned
-      order = 0
-      parent = child1
-    [[[terminal13]]]
-      profile = default
-      group = LOG RED
-      type = Terminal
-      order = 0
-      parent = child12
-      command = ""
-    [[[child17]]]
-      position = 268
+      position = 191
       type = VPaned
-      order = 1
-      parent = child15
-    [[[child5]]]
-      position = 121
-      type = VPaned
-      order = 1
-      parent = child1
-    [[[child6]]]
-      position = 927
-      type = HPaned
-      order = 0
-      parent = child5
-    [[[child15]]]
-      position = 189
-      type = VPaned
-      order = 1
-      parent = child9
-    [[[child9]]]
-      position = 927
-      type = HPaned
-      order = 1
-      parent = child5
-    [[[child12]]]
-      position = 266
-      type = VPaned
-      order = 1
-      parent = child10
     [[[child10]]]
+      order = 0
+      parent = child9
       position = 188
       type = VPaned
-      order = 0
+    [[[child12]]]
+      order = 1
+      parent = child10
+      position = 266
+      type = VPaned
+    [[[child15]]]
+      order = 1
       parent = child9
-    [[[terminal18]]]
-      profile = default
-      group = LOG RED
-      parent = child17
-      command = ssh -X rds@10.50.11.235
-      type = Terminal
+      position = 189
+      type = VPaned
+    [[[child17]]]
+      order = 1
+      parent = child15
+      position = 268
+      type = VPaned
+    [[[child2]]]
       order = 0
+      parent = child1
+      position = 927
+      type = HPaned
+    [[[child5]]]
+      order = 1
+      parent = child1
+      position = 121
+      type = VPaned
+    [[[child6]]]
+      order = 0
+      parent = child5
+      position = 927
+      type = HPaned
+    [[[child9]]]
+      order = 1
+      parent = child5
+      position = 927
+      type = HPaned
     [[[terminal11]]]
-      profile = default
       group = Kill BLACK
-      type = Terminal
       order = 0
       parent = child10
-    [[[terminal3]]]
       profile = default
-      group = Monitor
       type = Terminal
+    [[[terminal13]]]
+      command = ""
+      group = LOG RED
       order = 0
-      parent = child2
-    [[[terminal4]]]
+      parent = child12
       profile = default
-      group = Monitor
-      parent = child2
-      command = ssh -X rds@10.50.11.235
       type = Terminal
-      order = 1
-    [[[terminal7]]]
-      profile = default
-      group = Kill RED
-      type = Terminal
-      order = 0
-      parent = child6
-    [[[terminal16]]]
-      profile = default
-      group = Kill BLACK
-      parent = child15
-      command = ssh -X rds@10.50.11.235
-      type = Terminal
-      order = 0
-    [[[terminal19]]]
-      profile = default
-      group = LOG BLACK
-      parent = child17
-      command = ssh -X rds@10.50.11.235
-      type = Terminal
-      order = 1
-    [[[terminal8]]]
-      profile = default
-      group = Kill RED
-      parent = child6
-      command = ssh -X rds@10.50.11.235
-      type = Terminal
-      order = 1
     [[[terminal14]]]
-      profile = default
+      command = ""
       group = LOG BLACK
-      type = Terminal
       order = 1
       parent = child12
-      command = ""
+      profile = default
+      type = Terminal
+    [[[terminal16]]]
+      command = ssh -X rds@10.50.11.235
+      group = Kill BLACK
+      order = 0
+      parent = child15
+      profile = default
+      type = Terminal
+    [[[terminal18]]]
+      command = ssh -X rds@10.50.11.235
+      group = LOG RED
+      order = 0
+      parent = child17
+      profile = default
+      type = Terminal
+    [[[terminal19]]]
+      command = ssh -X rds@10.50.11.235
+      group = LOG BLACK
+      order = 1
+      parent = child17
+      profile = default
+      type = Terminal
+    [[[terminal3]]]
+      group = Monitor
+      order = 0
+      parent = child2
+      profile = default
+      type = Terminal
+    [[[terminal4]]]
+      command = ssh -X rds@10.50.11.235
+      group = Monitor
+      order = 1
+      parent = child2
+      profile = default
+      type = Terminal
+    [[[terminal7]]]
+      group = Kill RED
+      order = 0
+      parent = child6
+      profile = default
+      type = Terminal
+    [[[terminal8]]]
+      command = ssh -X rds@10.50.11.235
+      group = Kill RED
+      order = 1
+      parent = child6
+      profile = default
+      type = Terminal
 [plugins]
+[profiles]
+  [[default]]
+    foreground_color = "#ffffff"
+    scrollback_infinite = True

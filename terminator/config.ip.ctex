@@ -59,70 +59,70 @@
       position = 927
       type = HPaned
     [[[terminal11]]]
-      command = ssh rds@rds-guarani
+      command = ssh rds@rds-07
       group = Kill BLACK
       order = 0
       parent = child10
       profile = default
       type = Terminal
     [[[terminal13]]]
-      command = ssh rds@rds-guarani tail -f /var/log/platform2.log
+      command = ssh rds@rds-07 tail -f /var/log/platform.log
       group = LOG RED
       order = 0
       parent = child12
       profile = default
       type = Terminal
     [[[terminal14]]]
-      command = ssh rds@rds-guarani ssh mpblack tail -f /var/log/platform2.log
+      command = ssh rds@rds-07 ssh mpblack tail -f /var/log/platform.log
       group = LOG BLACK
       order = 1
       parent = child12
       profile = default
       type = Terminal
     [[[terminal16]]]
-      command = ssh rds@rds-marrua
+      command = ssh rds@rds-08
       group = Kill BLACK
       order = 0
       parent = child15
       profile = default
       type = Terminal
     [[[terminal18]]]
-      command = ssh rds@rds-marrua tail -f /var/log/platform2.log
+      command = ssh rds@rds-08 tail -f /var/log/platform.log
       group = LOG RED
       order = 0
       parent = child17
       profile = default
       type = Terminal
     [[[terminal19]]]
-      command = ssh -X rds@rds-marrua ssh mpblack tail -f /var/log/platform2.log
+      command = ssh -X rds@rds-08 ssh mpblack tail -f /var/log/platform.log
       group = LOG BLACK
       order = 1
       parent = child17
       profile = default
       type = Terminal
     [[[terminal3]]]
-      command = ssh rds@rds-guarani
+      command = ssh rds@rds-07
       group = Monitor
       order = 0
       parent = child2
       profile = default
       type = Terminal
     [[[terminal4]]]
-      command = ssh rds@rds-marrua
+      command = ssh rds@rds-08
       group = Monitor
       order = 1
       parent = child2
       profile = default
       type = Terminal
     [[[terminal7]]]
-      command = ssh rds@rds-guarani
+      command = ssh rds@rds-07
       group = Kill RED
       order = 0
       parent = child6
       profile = default
       type = Terminal
     [[[terminal8]]]
-      command = ssh rds@rds-marrua
+      command = ssh rds@rds-08
       group = Kill RED
       order = 1
       parent = child6

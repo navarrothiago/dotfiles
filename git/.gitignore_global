@@ -196,7 +196,6 @@ Prismtech/SCASecurityTestApplication_generatedSRC_CPP/obj/eorb16-linux-gcc-x86-t
 Prismtech/SCASecurityTestApplication_generatedSRC_CPP/obj/eorb16-linux-gcc-x86-tools/eorb16-linux-gcc-x86-build/DomainManager/DomainManager
 *.txt
 RemoteSystemsTempFiles/.project
-*.gitignore
 
 Prismtech/SCAEthernetTestApplication_generatedSRC_CPP/obj/eorb16-linux-gcc-x86-tools/eorb16-linux-gcc-x86-build/DeviceManager/DeviceManager
 Prismtech/SCAEthernetTestApplication_generatedSRC_CPP/obj/eorb16-linux-gcc-x86-tools/eorb16-linux-gcc-x86-build/DomainLog/DomainLog  

@@ -124,7 +124,7 @@ alias mfr='cd $MSCA_HOME/scripts/PackagePlataformaMockFullRelease'
 alias md='cd $MSCA_HOME/scripts/PackagePlataformaMockDebug'
 alias mr='cd $MSCA_HOME/scripts/PackagePlataformaMockRelease'
 
-alias m='cd /work/msca/scripts/PackageMonitor'
+alias m='cd /work/msca/scripts/PackageMonitorRelease'
 
 alias s='cd /work/msca/scripts'
 
@@ -140,6 +140,7 @@ alias stanag=' cd /work/stanag-5066/stanag5066-stack/stack'
 
 export MFOSCAHF_WORKSPACE=/work/mfosca-hf
 export RDS_LOG_FILE_TERMINATOR=platform2.log
+export MFOSCA_TRANSEC_WORKSPACE=/work/mfosca-transec
 
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'

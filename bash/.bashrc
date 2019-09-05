@@ -134,6 +134,9 @@ alias bon='wakeonlan 00:e0:4b:4f:92:26'
 alias ron='wakeonlan 00:e0:4b:4f:92:d1'
 export JAVA_HOME=/work/jdk1.7.0_79
 
+alias t='cd /work/mfosca-transec/transec/'
+alias mt='cd /work/mfosca-transec/'
+
 PATH=$PATH:/work/TextAnalysisTool.NET/:/work/logs/
  
 alias stanag=' cd /work/stanag-5066/stanag5066-stack/stack'

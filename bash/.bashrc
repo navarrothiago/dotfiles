@@ -130,8 +130,6 @@ alias s='cd /work/msca/scripts'
 
 alias ld='ls -d */'
 
-alias bon='wakeonlan 00:e0:4b:4f:92:26'
-alias ron='wakeonlan 00:e0:4b:4f:92:d1'
 export JAVA_HOME=/work/jdk1.7.0_79
 
 alias t='cd /work/mfosca-transec/transec/'
@@ -150,3 +148,5 @@ parse_git_branch() {
 }
 
 export PS1="[\u] \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+
+exec fish

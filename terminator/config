@@ -1,129 +1,22 @@
 [global_config]
-  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
-  window_state = maximise
+  title_font = DejaVu Sans Mono 9
+  title_transmit_bg_color = "#4e9a06"
+  title_use_system_font = False
 [keybindings]
+  layout_launcher = None
 [layouts]
   [[default]]
-    [[[child0]]]
-      order = 0
-      parent = ""
-      position = 65:24
-      size = 1855, 1056
-      type = Window
     [[[child1]]]
-      order = 0
-      parent = child0
-      position = 191
-      type = VPaned
-    [[[child10]]]
-      order = 0
-      parent = child9
-      position = 188
-      type = VPaned
-    [[[child12]]]
-      order = 1
-      parent = child10
-      position = 266
-      type = VPaned
-    [[[child15]]]
-      order = 1
-      parent = child9
-      position = 189
-      type = VPaned
-    [[[child17]]]
-      order = 1
-      parent = child15
-      position = 268
-      type = VPaned
-    [[[child2]]]
-      order = 0
-      parent = child1
-      position = 927
-      type = HPaned
-    [[[child5]]]
-      order = 1
-      parent = child1
-      position = 121
-      type = VPaned
-    [[[child6]]]
-      order = 0
-      parent = child5
-      position = 927
-      type = HPaned
-    [[[child9]]]
-      order = 1
-      parent = child5
-      position = 927
-      type = HPaned
-    [[[terminal11]]]
-      group = Kill BLACK
-      order = 0
-      parent = child10
-      profile = default
+      parent = window0
       type = Terminal
-    [[[terminal13]]]
-      command = ""
-      group = LOG RED
-      order = 0
-      parent = child12
-      profile = default
-      type = Terminal
-    [[[terminal14]]]
-      command = ""
-      group = LOG BLACK
-      order = 1
-      parent = child12
-      profile = default
-      type = Terminal
-    [[[terminal16]]]
-      command = ssh -X rds@10.50.11.235
-      group = Kill BLACK
-      order = 0
-      parent = child15
-      profile = default
-      type = Terminal
-    [[[terminal18]]]
-      command = ssh -X rds@10.50.11.235
-      group = LOG RED
-      order = 0
-      parent = child17
-      profile = default
-      type = Terminal
-    [[[terminal19]]]
-      command = ssh -X rds@10.50.11.235
-      group = LOG BLACK
-      order = 1
-      parent = child17
-      profile = default
-      type = Terminal
-    [[[terminal3]]]
-      group = Monitor
-      order = 0
-      parent = child2
-      profile = default
-      type = Terminal
-    [[[terminal4]]]
-      command = ssh -X rds@10.50.11.235
-      group = Monitor
-      order = 1
-      parent = child2
-      profile = default
-      type = Terminal
-    [[[terminal7]]]
-      group = Kill RED
-      order = 0
-      parent = child6
-      profile = default
-      type = Terminal
-    [[[terminal8]]]
-      command = ssh -X rds@10.50.11.235
-      group = Kill RED
-      order = 1
-      parent = child6
-      profile = default
-      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
 [plugins]
 [profiles]
   [[default]]
-    foreground_color = "#ffffff"
-    scrollback_infinite = True
+    background_darkness = 0.9
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = DejaVu Sans Mono 9
+    use_system_font = False

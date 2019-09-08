@@ -14,7 +14,7 @@ sudo usermod -aG docker $USER
 newgrp docker
 
 echo "Install packages" 
-sudo apt-get install terminator gitk meld vim git subversion remmina tmux wireshark network-manager-vpnc-gnome openvpn cppcheck fish
+sudo apt-get install terminator gitk meld vim git subversion remmina tmux wireshark network-manager-vpnc-gnome openvpn cppcheck fish default-jre eclipse
 
 echo "Create /work"
 sudo mkdir /work
@@ -40,3 +40,4 @@ ln -s /work/dotfiles/fish/functions $HOME/.config/fish/functions
 
 echo "Create git link" 
 ln -s /work/dotfiles/git/* $HOME/.  
+

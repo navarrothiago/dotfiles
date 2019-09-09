@@ -33,7 +33,7 @@ function fish_prompt --description 'Write out the prompt'
         else
             set git_status (set_color green):
         end
-        set git_info "(git$git_status$git_branch"(set_color white)")"
+        set git_info "($git_status$git_branch"(set_color white)")"
     end
     printf '%s%s%s%s%s%s%s%s%s%s%s%s%s' (set_color white) '❰' (set_color green) $USER (set_color white) '❙' (set_color yellow) (echo $PWD | sed -e "s|^$HOME|~|") (set_color white) $git_info (set_color white) '❱' (set_color white)
     if test $laststatus -eq 0

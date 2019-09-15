@@ -29,15 +29,16 @@ rm $HOME/.bashrc
 ln -s /work/dotfiles/bash/.bashrc $HOME/.bashrc
 
 #echo "Create terminator config link"
-#mkdir -p $HOME/.config/terminator/
-#ln -s /work/dotfiles/terminator/config $HOME/.config/terminator/config
+mkdir -p $HOME/.config/terminator/
+ln -s /work/dotfiles/terminator/config $HOME/.config/terminator/config
 
 echo "Create vim link"
 ln -s /work/dotfiles/vim $HOME/.vim
 
 echo "Create fish function link"
+mkdir -p $HOME/.config/fish
 ln -s /work/dotfiles/fish/functions $HOME/.config/fish/functions
 
 echo "Create git link" 
-ln -s /work/dotfiles/git/* $HOME/.  
+ln -s /work/dotfiles/git/.* $HOME/.  
 

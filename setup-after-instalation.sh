@@ -14,7 +14,7 @@ sudo usermod -aG docker $USER
 newgrp docker
 
 echo "Install packages" 
-sudo apt-get install terminator gitk meld vim git subversion remmina tmux wireshark network-manager-vpnc-gnome openvpn cppcheck fish default-jre eclipse
+sudo apt-get install terminator gitk meld vim git subversion remmina tmux wireshark network-manager-vpnc-gnome openvpn cppcheck fish default-jre eclipse-pydev eclipse-cdt
 
 echo "Create /work"
 sudo mkdir /work

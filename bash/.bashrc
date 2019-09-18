@@ -136,6 +136,7 @@ alias t='cd /work/mfosca-transec/transec/'
 alias mt='cd /work/mfosca-transec/'
 alias d='cd /work/dotfiles/'
 alias bash_config='vim ~/.bashrc'
+alias git_config='vim ~/.gitconfig'
 
 PATH=$PATH:/work/TextAnalysisTool.NET/:/work/logs/
  

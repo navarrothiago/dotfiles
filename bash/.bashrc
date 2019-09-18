@@ -135,6 +135,7 @@ export JAVA_HOME=/work/jdk1.7.0_79
 alias t='cd /work/mfosca-transec/transec/'
 alias mt='cd /work/mfosca-transec/'
 alias d='cd /work/dotfiles/'
+alias bash_config='vim ~/.bashrc'
 
 PATH=$PATH:/work/TextAnalysisTool.NET/:/work/logs/
  
@@ -148,5 +149,5 @@ parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-export PS1="[\u] \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+export PS1="[\u@\h] \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 

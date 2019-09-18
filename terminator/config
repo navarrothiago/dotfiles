@@ -3,6 +3,9 @@
   title_transmit_bg_color = "#4e9a06"
   title_use_system_font = False
 [keybindings]
+  group_all = None
+  group_tab = None
+  group_tab_toggle = <Primary>q
   layout_launcher = None
 [layouts]
   [[default]]

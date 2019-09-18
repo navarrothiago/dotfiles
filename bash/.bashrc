@@ -134,6 +134,7 @@ export JAVA_HOME=/work/jdk1.7.0_79
 
 alias t='cd /work/mfosca-transec/transec/'
 alias mt='cd /work/mfosca-transec/'
+alias d='cd /work/dotfiles/'
 
 PATH=$PATH:/work/TextAnalysisTool.NET/:/work/logs/
  

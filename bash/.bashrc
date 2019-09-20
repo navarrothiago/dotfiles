@@ -135,6 +135,7 @@ export JAVA_HOME=/work/jdk1.7.0_79
 alias t='cd /work/mfosca-transec/transec/'
 alias mt='cd /work/mfosca-transec/'
 alias d='cd /work/dotfiles/'
+alias de='cd /work/mfosca-transec/transec/utils/deployment/'
 alias bash_config='vim ~/.bashrc'
 alias git_config='vim ~/.gitconfig'
 

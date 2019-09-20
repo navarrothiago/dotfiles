@@ -28,6 +28,10 @@ echo "Create bashrc link"
 rm $HOME/.bashrc
 ln -s /work/dotfiles/bash/.bashrc $HOME/.bashrc
 
+echo "Create bash_completion link"
+rm $HOME/.bashrc
+ln -s /work/dotfiles/bash/.bash_completion $HOME/.bash_completion
+
 #echo "Create terminator config link"
 mkdir -p $HOME/.config/terminator/
 ln -s /work/dotfiles/terminator/config $HOME/.config/terminator/config

@@ -1,0 +1,10 @@
+{
+  "Cell": {
+    "cm_config": {
+      "lineNumbers": false
+    }
+  },
+  "load_extensions": {
+    "jupytext/index": true
+  }
+}

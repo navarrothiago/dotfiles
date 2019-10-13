@@ -46,3 +46,5 @@ ln -s /work/dotfiles/fish/functions $HOME/.config/fish/functions
 echo "Create git link" 
 ln -s /work/dotfiles/git/.* $HOME/.  
 
+echo "Create jupyter link" 
+ln -s /work/dotfiles/jupyter/.jupyter $HOME/.

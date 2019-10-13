@@ -48,3 +48,6 @@ ln -s /work/dotfiles/git/.* $HOME/.
 
 echo "Create jupyter link" 
 ln -s /work/dotfiles/jupyter/.jupyter $HOME/.
+
+echo "Create spyder3 link" 
+ln -s /work/dotfiles/spyder3/spyder-py3 $HOME/.config/spyder-py3

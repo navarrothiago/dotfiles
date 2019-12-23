@@ -7,7 +7,7 @@ rm -r $TERMINATOR_DIR
 echo "Crinado link para o arquivo $1"
 #ln -s  /home/$USER/dotfiles/terminator/$1 /home/$USER/.config/terminator/config
 mkdir $TERMINATOR_DIR
-ln -s  /home/$USER/dotfiles/terminator/$1 $TERMINATOR_DIR/config
+ln -s  $(pwd)/$1 $TERMINATOR_DIR/config
 
 ls -la $TERMINATOR_DIR/config
  

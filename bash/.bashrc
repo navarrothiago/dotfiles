@@ -106,50 +106,22 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-if [ -f ~/.prismtechrc ]; then
-    . ~/.prismtechrc
-fi
 
-#if [ -n "$DVSDK" ]; then
-#    . $DVSDK/linux-devkit/environment-setup
-#fi
-
-alias IRM='cd $MSCA_HOME/rf/CCDAStubDriver/src; make; make install; cd -'
 alias gits='git status' 
-alias msca='cd /work/msca'
-
-alias mfd='cd $MSCA_HOME/scripts/PackagePlataformaMockFullDebug'
-alias mfr='cd $MSCA_HOME/scripts/PackagePlataformaMockFullRelease'
-
-alias md='cd $MSCA_HOME/scripts/PackagePlataformaMockDebug'
-alias mr='cd $MSCA_HOME/scripts/PackagePlataformaMockRelease'
-
-alias m='cd /work/msca/scripts/PackageMonitorRelease'
-
-alias s='cd /work/msca/scripts'
-
 alias ld='ls -d */'
 
 export JAVA_HOME=/work/jdk1.7.0_79
 
-alias t='cd /work/mfosca-transec/transec/'
-alias mt='cd /work/mfosca-transec/'
-alias d='cd /work/dotfiles/'
 alias de='cd /work/mfosca-transec/transec/utils/deployment/'
-alias bash_config='vim ~/.bashrc'
-alias git_config='vim ~/.gitconfig'
 
 PATH=$PATH:/work/TextAnalysisTool.NET/:/work/logs/
  
-alias stanag=' cd /work/stanag-5066/stanag5066-stack/stack'
-
-export MFOSCAHF_WORKSPACE=/work/mfosca-hf
-export RDS_LOG_FILE_TERMINATOR=platform2.log
-export MFOSCA_TRANSEC_WORKSPACE=/work/mfosca-transec
 
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
+alias w='cd /work/rdsenv/workspace'
+alias d='cd /work/dotfiles'
 
 export PS1="[\u@\h] \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 

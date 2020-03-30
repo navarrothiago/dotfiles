@@ -111,7 +111,7 @@ alias gits='git status'
 alias ld='ls -d */'
 
 export JAVA_HOME=/work/jdk1.7.0_79
-
+export EDITOR=vim
 alias de='cd /work/mfosca-transec/transec/utils/deployment/'
 
 PATH=$PATH:/work/TextAnalysisTool.NET/:/work/logs/
@@ -122,6 +122,7 @@ parse_git_branch() {
 }
 alias w='cd /work/rdsenv/workspace'
 alias d='cd /work/dotfiles'
+
 
 export PS1="[\u@\h] \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 

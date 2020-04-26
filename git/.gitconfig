@@ -1,6 +1,6 @@
 [user]
     name = Thiago Arruda Navarro do Amaral\n
-    email = t_61327@cpqd.com.br
+    email = navarro.ime@gmail.com
 [alias]
     sync = pull --rebase
     co = checkout
@@ -35,6 +35,7 @@
     ploh = pull origin HEAD
     unstage = reset --soft HEAD^
     ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+    l =  log --oneline --graph --decorate --all
     ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
     f = "!git ls-files | grep -i"
     gr = grep -Ii

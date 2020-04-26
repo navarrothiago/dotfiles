@@ -25,6 +25,9 @@ set encoding=utf-8
 "Enables backspacing over everything in insert mode:
 set backspace=indent,eol,start
 
+"Set background as dark
+set background=dark
+
 "Completely disable flash or beep bells:
 set noerrorbells
 set visualbell t_vb=
@@ -97,8 +100,8 @@ set fillchars=vert:\ ,fold:-
 set title
 
 "Show the current line number and relative distances to other lines:
-set number
-set relativenumber
+"set number
+"set relativenumber
 
 "Show the active mode, but not the current command, at the botton of the screen:
 set showmode

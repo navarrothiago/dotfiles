@@ -1,5 +1,6 @@
 [global_config]
   dbus = False
+  inactive_color_offset = 0.320987654321
   title_font = DejaVu Sans Mono 9
   title_transmit_bg_color = "#4e9a06"
 [keybindings]

@@ -1,0 +1,27 @@
+{
+    "window.zoomLevel": 0,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "cmake.configureOnOpen": true,
+    "workbench.statusBar.visible": true,
+    "files.associations": {
+        "*.html": "njk"
+    },
+
+    "emmet.excludeLanguages": [],
+    "emmet.includeLanguages": {
+        "njk": "html",
+        "markdown": "html"
+    },
+    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "Launchbase Theme",
+    
+    "vim.insertModeKeyBindingsNonRecursive": [
+    {
+        "before": [ "<C-s>" ],
+        "commands": [
+            { "command": "workbench.action.files.save" },
+            { "command": "extension.vim_escape" }
+        ]
+    }
+],
+}

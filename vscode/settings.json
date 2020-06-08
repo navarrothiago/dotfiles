@@ -1,27 +1,43 @@
 {
-    "window.zoomLevel": 0,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "cmake.configureOnOpen": true,
-    "workbench.statusBar.visible": true,
-    "files.associations": {
-        "*.html": "njk"
-    },
+  "window.zoomLevel": 0,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "cmake.configureOnOpen": true,
+  "workbench.statusBar.visible": true,
+  "files.associations": {
+    "*.html": "njk"
+  },
+  "emmet.excludeLanguages": [],
+  "emmet.includeLanguages": {
+    "njk": "html",
+    "markdown": "html"
+  },
+  "editor.minimap.enabled": false,
+  "workbench.colorTheme": "Launchbase Theme",
 
-    "emmet.excludeLanguages": [],
-    "emmet.includeLanguages": {
-        "njk": "html",
-        "markdown": "html"
-    },
-    "editor.minimap.enabled": false,
-    "workbench.colorTheme": "Launchbase Theme",
-    
-    "vim.insertModeKeyBindingsNonRecursive": [
+  // FIXME: See bindings key to fix it.
+  "vim.insertModeKeyBindingsNonRecursive": [
     {
-        "before": [ "<C-s>" ],
-        "commands": [
-            { "command": "workbench.action.files.save" },
-            { "command": "extension.vim_escape" }
-        ]
+      "before": [
+        "<C-s>"
+      ],
+      "commands": [
+        {
+          "command": "workbench.action.files.save"
+        },
+        {
+          "command": "extension.vim_escape"
+        }
+      ]
     }
-],
+  ],
+  // The number of spaces a tab is equal to. This setting is overridden
+  // based on the file contents when `editor.detectIndentation` is true.
+  "editor.tabSize": 2,
+  // Insert spaces when pressing Tab. This setting is overriden
+  // based on the file contents when `editor.detectIndentation` is true.
+  "editor.insertSpaces": true,
+  // When opening a file, `editor.tabSize` and `editor.insertSpaces`
+  // will be detected based on the file contents. Set to false to keep
+  // the values you've explicitly set, above.
+  "editor.detectIndentation": false
 }

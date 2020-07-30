@@ -12,7 +12,6 @@
     "markdown": "html"
   },
   "editor.minimap.enabled": false,
-  "workbench.colorTheme": "Launchbase Theme",
 
   // FIXME: See bindings key to fix it.
   "vim.insertModeKeyBindingsNonRecursive": [
@@ -39,5 +38,6 @@
   // When opening a file, `editor.tabSize` and `editor.insertSpaces`
   // will be detected based on the file contents. Set to false to keep
   // the values you've explicitly set, above.
-  "editor.detectIndentation": false
+  "editor.detectIndentation": false,
+  "workbench.colorTheme": "Launchbase Theme"
 }

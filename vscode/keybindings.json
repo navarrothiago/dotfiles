@@ -7,5 +7,20 @@
   {
     "key": "ctrl+k ctrl+q",
     "command": "-workbench.action.navigateToLastEditLocation"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "-workbench.action.newWindow"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    "key":"ctrl+shift+5",
+    "command": "editor.emmet.action.matchTag",
+    "when": "editorFocus"
   }
+  
 ]

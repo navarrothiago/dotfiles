@@ -1,7 +1,7 @@
 set mainfont {sans 9}
-set textfont {monospace 9}
+set textfont {{Noto Sans} 9}
 set uifont {sans 9 bold}
-set tabstop 8
+set tabstop 4
 set findmergefiles 0
 set maxgraphpct 50
 set maxwidth 16
@@ -51,13 +51,14 @@ set indexcirclecolor #00ff00
 set circlecolors {white blue gray blue blue}
 set linkfgcolor blue
 set circleoutlinecolor black
-set geometry(main) 1845x997+0+0
+set web_browser xdg-open
+set geometry(main) 1920x982+0+0
 set geometry(state) normal
-set geometry(topwidth) 1845
+set geometry(topwidth) 1920
 set geometry(topheight) 210
-set geometry(pwsash0) "1325 1"
-set geometry(pwsash1) "1702 1"
-set geometry(botwidth) 1183
-set geometry(botheight) 782
+set geometry(pwsash0) "1295 1"
+set geometry(pwsash1) "1891 1"
+set geometry(botwidth) 1419
+set geometry(botheight) 767
 set permviews {{{View 1} {} {--branches --remotes} {}}
 }

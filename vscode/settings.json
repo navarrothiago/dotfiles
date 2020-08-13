@@ -1,18 +1,21 @@
 {
   "window.zoomLevel": 0,
-  "editor.multiCursorModifier": "ctrlCmd",
+  "explorer.compactFolders": false,
   "cmake.configureOnOpen": true,
-  "workbench.statusBar.visible": true,
   "files.associations": {
     "*.html": "njk"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
   },
   "emmet.excludeLanguages": [],
   "emmet.includeLanguages": {
     "njk": "html",
-    "markdown": "html"
+    "markdown": "html",
+    "javascript": "javascriptreact"
   },
-  "editor.minimap.enabled": false,
-
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
   // FIXME: See bindings key to fix it.
   "vim.insertModeKeyBindingsNonRecursive": [
     {
@@ -29,6 +32,23 @@
       ]
     }
   ],
+  //Workbench
+  "workbench.editor.labelFormat": "short",
+  "workbench.colorTheme": "Omni",
+  "workbench.statusBar.visible": true,
+  "workbench.iconTheme": "material-icon-theme",
+  // Clang
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 2, TabWidth: 2, BreakBeforeBraces: Linux, AllowShortIfStatementsOnASingleLine: true, IndentCaseLabels: false, ColumnLimit: 300, AccessModifierOffset: -4 , AllowShortLoopsOnASingleLine: true,  AllowShortBlocksOnASingleLine:  false, SpaceBeforeParens: false}",
+  //Editor
+  "editor.fontSize": 14,
+  "editor.lineHeight": 22,
+  "editor.renderLineHighlight": "gutter",
+  "editor.renderControlCharacters": false,
+  "editor.fontFamily": "'Fira Code', 'Noto Mono', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "600", // Regular,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.minimap.enabled": false,
   // The number of spaces a tab is equal to. This setting is overridden
   // based on the file contents when `editor.detectIndentation` is true.
   "editor.tabSize": 2,
@@ -39,5 +59,39 @@
   // will be detected based on the file contents. Set to false to keep
   // the values you've explicitly set, above.
   "editor.detectIndentation": false,
-  "workbench.colorTheme": "Launchbase Theme"
+  // Material Icon.
+  "material-icon-theme.folders.associations": {
+    "infra": "app",
+    "entities": "class",
+    "schemas": "class",
+    "typeorm": "database",
+    "repositories": "mappings",
+    "http": "container",
+    "migrations": "tools",
+    "modules": "components",
+    "implementations": "core",
+    "dtos": "typescript",
+    "fakes": "mock",
+    "websockets": "pipe",
+    "protos": "pipe",
+    "grpc": "pipe"
+  },
+  "material-icon-theme.files.associations": {
+    "ormconfig.json": "database",
+    "tsconfig.json": "tune",
+    "*.proto": "3d"
+  },
+  // Exclude files.
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "node_modules": true
+  },
+  // CodeLens.
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
 }

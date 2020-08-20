@@ -34,11 +34,10 @@
   ],
   //Workbench
   "workbench.editor.labelFormat": "short",
-  "workbench.colorTheme": "Omni",
   "workbench.statusBar.visible": true,
   "workbench.iconTheme": "material-icon-theme",
   // Clang
-  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 2, TabWidth: 2, BreakBeforeBraces: Linux, AllowShortIfStatementsOnASingleLine: true, IndentCaseLabels: false, ColumnLimit: 300, AccessModifierOffset: -4 , AllowShortLoopsOnASingleLine: true,  AllowShortBlocksOnASingleLine:  false, SpaceBeforeParens: false}",
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 2, TabWidth: 2, BreakBeforeBraces: Linux, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, ColumnLimit: 300, AccessModifierOffset: -4 , AllowShortLoopsOnASingleLine: false,  AllowShortBlocksOnASingleLine:  false, SpaceBeforeParens: false, BreakConstructorInitializersBeforeComma: true, AccessModifierOffset: -2, AlwaysBreakTemplateDeclarations: Yes }",
   //Editor
   "editor.fontSize": 14,
   "editor.lineHeight": 22,
@@ -49,6 +48,7 @@
   "editor.fontWeight": "600", // Regular,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.minimap.enabled": false,
+  "editor.lineNumbers":"relative",
   // The number of spaces a tab is equal to. This setting is overridden
   // based on the file contents when `editor.detectIndentation` is true.
   "editor.tabSize": 2,
@@ -94,4 +94,12 @@
   "gitlens.codeLens.recentChange.enabled": false,
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
+  // Terminal.
+  "terminal.integrated.fontFamily": "'Fira Code', 'Noto Mono', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
+  "C_Cpp.updateChannel": "Insiders",
+  // Avoid insert spaces in Makefile.
+  "[makefile]": {
+    "editor.insertSpaces": false,
+    "editor.detectIndentation": false
+  },
 }

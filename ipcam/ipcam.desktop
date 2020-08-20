@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=IPCam
+Comment=Remote IPCam using OBS
+Type=Application
+Exec=/work/dotfiles/ipcam/sink_video.sh 192.168.15.9
+Icon=/usr/share/icons/Papirus-Light/16x16/devices/camera-web.svg
+Terminal=true
+Categories=Multimidia;

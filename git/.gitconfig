@@ -52,3 +52,9 @@
     smudge = git-lfs smudge -- %f
     process = git-lfs filter-process
     required = true
+    
+[http "https://gitlab.dti.ctex.eb.mil.br"]
+    # windows path use double back slashes
+    # #  sslCaInfo = C:\\Users\\<user>\\repo.your-server.com.cer
+    # # unix path to certificate (Base64 encoded)
+    sslCaInfo = /etc/docker/certs.d/gitlab.dti.ctex.eb.mil.br/registry.crt
